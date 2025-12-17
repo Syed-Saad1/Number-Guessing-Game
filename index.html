@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+
+<body
+    style="background-image: url(./Accets/d0cb6aeabb07ebf5420eb6b45998bc21.jpg);background-size: cover; background-repeat: no-repeat;">
+    <div class="flex justify-center item-center mt-10">
+
+        <div id="Wrapper">
+            <h1 class="text-center mt-5 font-bold text-white text-3xl">Number Guessing Game</h1>
+            <p class="text-center mt-4 text-white font-semibold">Try and guess a random Number between 1 and 1000!</p>
+            <p class="text-center mt-1 text-white font-semibold">You have 10 attempts to Guess the Right Number.</p>
+            <div class="flex justify-center">
+                <form class="form">
+                    <p class="mt-4 text-center font-bold text-white text-3xl"><label for="guessnum" id="guess">Guess a
+                            Number</label></p> <br>
+                    <input class=" border-2 text-center font-bold border-black bg-white outline-none py-2 px-2 mt-2"
+                        type="text" id="guessnum" class="guessnum"> <br>
+                    <input class="mt-6 px-16 rounded-full shadow-2xl text-center text-white font-bold py-3 bg-black"
+                        type="submit" class="guesssubmit" id="submit" value="Submit Guess">
+                </form>
+            </div>
+            <div class="result-para">
+                <p class="mt-7 text-center text-white font-bold text-xl">Previous Guesses : <span
+                        class="PreviousGuesses"></span></p>
+                <p class="mt-3 text-center text-white font-semibold">Guess Remaining : <span
+                        class="lastGuesses">10</span></p>
+                <p class="text-white text-center mt-3 font-bold text-2xl lowandhigh"></p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+<script src="./app.js"></script>
+</html>
